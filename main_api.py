@@ -76,7 +76,7 @@ def select_where_date(where_date):
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="",
+        passwd="0932398390",
         database="bus_database"
     )
     mycursor = mydb.cursor()
@@ -161,7 +161,7 @@ def select_sum_date(sum_date):
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="",
+        passwd="0932398390",
         database="bus_database"
     )
     mycursor = mydb.cursor()
@@ -219,7 +219,7 @@ def select_sum_last_date(bus_id, last_date):
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="",
+        passwd="0932398390",
         database="bus_database"
     )
     # print(sql)
@@ -258,7 +258,7 @@ def select_sum_month(bus_id, year):
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="",
+        passwd="0932398390",
         database="bus_database"
     )
     mycursor = mydb.cursor()
@@ -291,7 +291,7 @@ def select_sum_year(bus_id):
     mydb = mysql.connector.connect(
         host="localhost",
         user="root",
-        passwd="",
+        passwd="0932398390",
         database="bus_database"
     )
     mycursor = mydb.cursor()
@@ -309,4 +309,4 @@ def select_sum_year(bus_id):
 
 if __name__ == "__main__":
     app.run(debug=True)
-    app.run(host='0,0,0,0' , port=5000)
+    app.run(host='0.0.0.0', port=5000)
